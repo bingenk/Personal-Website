@@ -242,7 +242,9 @@ body.dark-theme {
 }
 
 /* Show menu */
-
+.show-menu {
+  bottom: 2rem;
+}
 /* Active link */
 
 /*=============== HOME ===============*/
