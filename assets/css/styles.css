@@ -605,7 +605,37 @@ body.dark-theme {
 }
 
 /* Swiper class */
+.testimonial__container .swiper-slide {
+  margin-bottom: 4rem;
+}
 
+.testimonial__container .swiper-button-prev::after,
+.testimonial__container .swiper-button-next::after {
+  content: "";
+}
+
+.testimonial__container .swiper-button-prev,
+.testimonial__container .swiper-button-next {
+  font-size: 2rem;
+  color: var(--title-color);
+  width: initial;
+  height: initial;
+  top: initial;
+  bottom: 0.5rem;
+}
+
+.testimonial__container .swiper-button-prev {
+  left: calc(50% - 3rem);
+}
+
+.testimonial__container .swiper-button-nect {
+  right: calc(50% - 3rem);
+}
+
+.testimonial__container .swiper-button-disabled {
+  opacity: initial;
+  color: var(--text-color-light);
+}
 /*=============== CONTACT ===============*/
 
 /* Status color */
