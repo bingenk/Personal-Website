@@ -914,5 +914,33 @@ body.dark-theme {
   }
 }
 /* For medium devices */
+@media screen and (min-width: 576px) {
+  .nav,
+  .nav-menu {
+    width: 380px;
+  }
+  .nav {
+    margin: 0 auto;
+  }
 
+  .skills__container {
+    justify-content: center;
+  }
+
+  .projects__container,
+  .testimonial__container {
+    width: 400px;
+  }
+  .projects__container {
+    overflow: hidden;
+  }
+
+  .projects__container .swiper-button-prev {
+    left: 1rem;
+  }
+
+  .projects__container .swiper-button-next {
+    right: 1rem;
+  }
+}
 /* For large devices */ ;
