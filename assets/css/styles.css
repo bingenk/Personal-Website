@@ -125,6 +125,27 @@ body.dark-theme {
     Color changes in some parts of 
     the website, in light theme
 ==========*/
+.dark-theme .nav,
+.dark-theme .nav-menu,
+.dark-theme .scrollup {
+  background-color: var(--container-color);
+  box-shadow: 0 4px 20px hsla(207, 24%, 8%, 0.4);
+}
+
+.dark-theme .home__shape-wawes,
+.dark-theme .home__shape-circle,
+.dark-theme .qualification__img,
+.dark-theme .testimonial__img {
+  filter: invert(1);
+}
+
+.dark-theme .home__social-link {
+  color: var(--title-color);
+}
+
+.dark-theme .section__border {
+  border-bottom: 1px solid hsla(207, 4%, 32%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -186,6 +207,7 @@ body.dark-theme {
   box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
   padding-inline: 1.5rem;
   border-radius: 3rem;
+  transition: background 0.4s; /* for dark mode animation */
 }
 
 .nav__logo,
@@ -285,6 +307,7 @@ body.dark-theme {
   justify-self: center;
   border-radius: 6.25rem;
   place-items: center;
+  transition: background 0.4s; /* for dark mode animation */
 }
 
 .home__profile {
@@ -408,6 +431,7 @@ body.dark-theme {
   border-radius: 3rem;
   place-items: center;
   margin-bottom: 1rem;
+  transition: background 0.4s; /* for dark mode animation */
 }
 
 .skills__blob img {
@@ -748,6 +772,7 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-medium);
   padding: 0.35rem;
+  transition: background 0.4s; /* for dark mode animation */
 }
 
 .contact__form-area {
