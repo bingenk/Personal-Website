@@ -892,7 +892,27 @@ body.dark-theme {
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
+@media screen and (max-width: 340px) {
+  .container {
+    margin-inline: 1rem;
+  }
 
+  .nav-menu {
+    padding-bottom: 4rem;
+  }
+  .nav__list {
+    gap: 1rem 1.25rem;
+  }
+
+  .skills-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects__img {
+    width: 200px;
+    justify-self: center;
+  }
+}
 /* For medium devices */
 
 /* For large devices */ ;
