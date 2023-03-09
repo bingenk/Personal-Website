@@ -943,4 +943,47 @@ body.dark-theme {
     right: 1rem;
   }
 }
+
+@media screen and (min-width: 767px) {
+  .home__container {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+  .home__data {
+    order: 2;
+  }
+  .home__info:nth-child(3) {
+    order: 3;
+    text-align: right;
+  }
+  .home__info {
+    margin-top: 10rem;
+  }
+  .home__info-description {
+    padding-right: 0;
+  }
+  .skills__container,
+  .qualification__container,
+  .contact__container {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .skills__container {
+    column-gap: 5rem;
+  }
+  .qualification__container {
+    justify-content: center;
+    column-gap: 10rem;
+  }
+
+  .projects__container {
+    width: 500px;
+  }
+
+  .contact__form {
+    width: 360px;
+  }
+  .contact__container {
+    justify-content: center;
+    column-gap: 8rem;
+  }
+}
 /* For large devices */ ;
