@@ -1090,12 +1090,12 @@ body.dark-theme {
     border-radius: 12.5rem;
   }
   .home__profile {
-    width: 240px;
-    height: 520px;
+    width: 340px;
+    height: 530px;
     border-radius: 10.6rem;
   }
   .home__profile img {
-    width: 300px;
+    width: 220px;
   }
   .home__shape-wawes {
     width: 100px;
