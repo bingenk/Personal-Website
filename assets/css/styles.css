@@ -1196,7 +1196,7 @@ body.dark-theme {
     margin-bottom: 6rem;
   }
   .testimonial__description {
-    font-size: var(--h2-font-size);
+    font-size: var(--h4-font-size);
     margin-bottom: 2rem;
   }
   .testimonial__img {
