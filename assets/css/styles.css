@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -219,6 +220,28 @@ body.dark-theme {
 .nav__logo {
   font-family: var(--title-color);
   font-weight: var(--font-medium);
+}
+
+.nav__logo {
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+  width: 7ch;
+  animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid transparent;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .nav__toggle {
@@ -1115,11 +1138,6 @@ body.dark-theme {
   }
   .home__social-link {
     font-size: 1.5rem;
-  }
-  .home__info {
-    grid-template-rows: repeat(3, 130px);
-    row-gap: 4rem;
-    margin-top: 16rem;
   }
 
   .skills__container {
