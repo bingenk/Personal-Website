@@ -456,6 +456,9 @@ body.dark-theme {
   margin-bottom: 1rem;
   transition: background 0.4s; /* for dark mode animation */
 }
+#java_img {
+  width: 35px;
+}
 
 .skills__blob img {
   width: 40px;
