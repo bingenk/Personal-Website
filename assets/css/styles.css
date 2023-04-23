@@ -225,7 +225,7 @@ body.dark-theme {
 .nav__logo {
   font-family: "Lobster", cursive;
   font-size: 24px;
-  width: 7ch;
+  width: 6.1ch;
   animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
