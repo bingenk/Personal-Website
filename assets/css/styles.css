@@ -1,6 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&display=swap");
 /*=============== SELECTION CSS ===============*/
 ::selection {
   background: hsla(194, 65%, 65%, 1);
@@ -226,9 +227,10 @@ body.dark-theme {
 }
 
 .nav__logo {
-  font-family: "Lobster", cursive;
-  font-size: 24px;
-  width: 6.1ch;
+  font-family: "Croissant One", cursive;
+  font-size: 21px;
+  font-weight: bold;
+  width: 6.9ch;
   animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
