@@ -412,6 +412,25 @@ body.dark-theme {
   padding-right: 4rem;
 }
 
+#Idresume {
+  color: black;
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0)),
+    linear-gradient(
+      to right,
+      rgb(174, 221, 255),
+      rgb(60, 124, 242),
+      rgb(3, 22, 230)
+    );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+#Idresume:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
 .home__info-number {
   font-size: var(--h1-font-size);
   font-weight: var(--font-semi-bold);
