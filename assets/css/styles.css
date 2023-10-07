@@ -104,6 +104,10 @@ img {
   height: auto;
 }
 
+span {
+  margin: 0 0 10px;
+}
+
 /*=============== THEME ===============*/
 .nav__buttons {
   display: flex;
