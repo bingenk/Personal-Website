@@ -175,7 +175,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.home__data, .projects__container, .testimonial__container, .footer__container`
+  `.home__data, .projects__container, .testimonial__container, .footer__container, .home__profile img`
 );
 sr.reveal(`.home__info div`, { delay: 600, origin: "bottom", interval: 100 });
 sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1) `, {
