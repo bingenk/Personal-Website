@@ -5,7 +5,6 @@ My name is Bing En, and I am currently a second-year IT student at Ngee Ann Poly
 I consider myself as a type of person who never likes to rely on luck. I firmly believe that everything can be achieved through hard work and determination. I seek to perform my best in every occasion, not to impress any, but rather to strive for excellence. Not to mention, when handling difficult situations, many might see as problems, I simply look at them as surmoutable challenges that set my mind in overdrive mode. I possess various soft skills such as communication, teamwork and leadership. Alongside these, I am proficient in both English and Chinese languages. Moreover, I have acquired foundational knowledge in programming language etc. Python, C#, Java and how to handle Power BI software, Adobe Illustrator, Android Studio, Microsoft SQL Server, Visual Studio 2022, Visual Studio Code, GameMaker, GitHub and many more.
 
 Apart from academics, I relish playing badminton and swimming, both for leisure and competition. My passion extends to UX/UI development and coding websites, with a particular dedication to mastering UI development during my free time. With a profound interest in application and web development, I eagerly anticipate delving deeper into this realm in the years to come. You're welcome to explore further insights about me on my personal website.
-<<<<<<< HEAD
 
 ## &copy; Copyright Bing En
 
@@ -15,6 +14,6 @@ All files and information contained in this Website or Blog are copyright by Bin
 
 Copyright © Orion Systems. All Rights Reserved. www.DisclaimerTemplate.com
 
+
 [Privacy & Policy](https://www.iubenda.com/privacy-policy/14324613.pdf) | [Cookie Policy](https://www.iubenda.com/privacy-policy/14324613/cookie-policy.pdf)
-=======
->>>>>>> d740ab120a16df40cc0884148d0da1aacf519889
+
