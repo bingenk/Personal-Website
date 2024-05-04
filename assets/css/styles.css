@@ -1371,3 +1371,11 @@ body.dark-theme {
     box-shadow: none;
   }
 }
+
+/*=============== Last Updated ===============*/
+#last-updated {
+  display: block;
+  margin-top: 1rem;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}

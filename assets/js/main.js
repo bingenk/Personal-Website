@@ -185,3 +185,19 @@ sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
   origin: "right",
 });
 sr.reveal(`.qualification__content`, { interval: 100 });
+
+/*=============== LAST UPDATED TEXT ===============*/
+// window.onload = function () {
+//   var apiUrl =
+//     "https://api.github.com/repos/bingenk/Personal-Website/commits?per_page=1";
+
+//   fetch(apiUrl)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       var lastCommitDate = new Date(data[0].commit.author.date);
+//       var lastCommitDateString = lastCommitDate.toLocaleString();
+//       document.getElementById("last-updated").textContent =
+//         "Last updated: " + lastCommitDateString;
+//     })
+//     .catch((error) => console.error("Error fetching data:", error));
+// };
