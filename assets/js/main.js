@@ -189,12 +189,15 @@ sr.reveal(`.qualification__content`, { interval: 100 });
 /*=============== WELCOME AUDIO ===============*/
 const speechPlayer = document.getElementById("bg-speech");
 const musicPlayer = document.getElementById("bg-music");
-let musicHasPlayed = false;
 
-// Reduce volume for the bg-music
+// Reduce the volume for the background music
 const musicVolume = 0.5;
 musicPlayer.volume = musicVolume;
 
+// Track whether the background music has played
+let musicHasPlayed = false;
+
+// Event listener for the background music
 musicPlayer.addEventListener("play", function musicPlayHandler() {
   if (musicHasPlayed) {
     musicPlayer.pause(); // Avoid audio loop
@@ -204,8 +207,16 @@ musicPlayer.addEventListener("play", function musicPlayHandler() {
   }
 });
 
-speechPlayer.play();
-musicPlayer.play();
+// Function to start playing both audio files after the website is loaded
+function playAudioOnLoad() {
+  speechPlayer.play();
+  musicPlayer.play();
+  // Remove the event listener to ensure audio only plays once
+  document.removeEventListener("DOMContentLoaded", playAudioOnLoad);
+}
+
+// Add event listener to start playing audio when the website is loaded
+document.addEventListener("DOMContentLoaded", playAudioOnLoad);
 
 /*=============== LAST UPDATED TEXT ===============*/
 // window.onload = function () {
