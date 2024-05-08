@@ -187,11 +187,12 @@ sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
 sr.reveal(`.qualification__content`, { interval: 100 });
 
 /*=============== WELCOME AUDIO ===============*/
+// Get the audio elements
 const speechPlayer = document.getElementById("bg-speech");
 const musicPlayer = document.getElementById("bg-music");
 
-// Reduce the volume for the background music
-const musicVolume = 0.5;
+// Set the volume for the background music
+const musicVolume = 0.5; // Set the volume level (between 0 and 1)
 musicPlayer.volume = musicVolume;
 
 // Track whether the background music has played
@@ -207,16 +208,16 @@ musicPlayer.addEventListener("play", function musicPlayHandler() {
   }
 });
 
-// Function to start playing both audio files after the website is loaded
-function playAudioOnLoad() {
+// Function to start playing both audio files when a user interacts with the document
+function playAudio() {
   speechPlayer.play();
   musicPlayer.play();
   // Remove the event listener to ensure audio only plays once
-  document.removeEventListener("DOMContentLoaded", playAudioOnLoad);
+  document.removeEventListener("click", playAudio);
 }
 
-// Add event listener to start playing audio when the website is loaded
-document.addEventListener("DOMContentLoaded", playAudioOnLoad);
+// Add event listener to start playing audio when a user interaction occurs
+document.addEventListener("click", playAudio);
 
 /*=============== LAST UPDATED TEXT ===============*/
 // window.onload = function () {
