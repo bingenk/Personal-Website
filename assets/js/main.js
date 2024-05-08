@@ -187,6 +187,9 @@ sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
 sr.reveal(`.qualification__content`, { interval: 100 });
 
 /*=============== WELCOME AUDIO ===============*/
+// Create an AudioContext instance
+const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
 // Get the audio elements
 const speechPlayer = document.getElementById("bg-speech");
 const musicPlayer = document.getElementById("bg-music");
@@ -208,16 +211,26 @@ musicPlayer.addEventListener("play", function musicPlayHandler() {
   }
 });
 
-// Function to start playing both audio files when a user interacts with the document
-function playAudio() {
+// Function to start playing both audio files using AudioContext
+function playAudioWithAudioContext() {
+  // Create an AudioBufferSourceNode for each audio element
+  const speechSource = audioContext.createMediaElementSource(speechPlayer);
+  const musicSource = audioContext.createMediaElementSource(musicPlayer);
+
+  // Connect the audio sources to the destination (speakers)
+  speechSource.connect(audioContext.destination);
+  musicSource.connect(audioContext.destination);
+
+  // Start playback
   speechPlayer.play();
   musicPlayer.play();
+
   // Remove the event listener to ensure audio only plays once
-  document.removeEventListener("click", playAudio);
+  document.removeEventListener("DOMContentLoaded", playAudioWithAudioContext);
 }
 
-// Add event listener to start playing audio when a user interaction occurs
-document.addEventListener("click", playAudio);
+// Add event listener to start playing audio when the document is loaded
+document.addEventListener("DOMContentLoaded", playAudioWithAudioContext);
 
 /*=============== LAST UPDATED TEXT ===============*/
 // window.onload = function () {
