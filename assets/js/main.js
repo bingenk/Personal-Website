@@ -186,6 +186,27 @@ sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
 });
 sr.reveal(`.qualification__content`, { interval: 100 });
 
+/*=============== WELCOME AUDIO ===============*/
+const speechPlayer = document.getElementById("bg-speech");
+const musicPlayer = document.getElementById("bg-music");
+let musicHasPlayed = false;
+
+// Reduce volume for the bg-music
+const musicVolume = 0.5;
+musicPlayer.volume = musicVolume;
+
+musicPlayer.addEventListener("play", function musicPlayHandler() {
+  if (musicHasPlayed) {
+    musicPlayer.pause(); // Avoid audio loop
+  } else {
+    musicHasPlayed = true;
+    musicPlayer.removeEventListener("play", musicPlayHandler);
+  }
+});
+
+speechPlayer.play();
+musicPlayer.play();
+
 /*=============== LAST UPDATED TEXT ===============*/
 // window.onload = function () {
 //   var apiUrl =
