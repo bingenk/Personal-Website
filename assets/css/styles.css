@@ -1013,7 +1013,7 @@ body.dark-theme {
 }
 
 /*=============== PAW BUTTON ===============*/
-.paw-container {
+/* .paw-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1321,7 +1321,7 @@ body.dark-theme {
 .dribbble img {
   display: block;
   height: 28px;
-}
+} */
 
 /*=============== LAST UPDATED ===============*/
 #last-updated {

@@ -235,62 +235,62 @@ document.addEventListener("click", playAudio);
 // };
 
 /*=============== PAW BUTTON ===============*/
-let confettiAmount = 60,
-  confettiColors = [
-    "#7d32f5",
-    "#f6e434",
-    "#63fdf1",
-    "#e672da",
-    "#295dfe",
-    "#6e57ff",
-  ],
-  random = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  },
-  createConfetti = (to) => {
-    let elem = document.createElement("i"),
-      set = Math.random() < 0.5 ? -1 : 1;
-    elem.style.setProperty("--x", random(-260, 260) + "px");
-    elem.style.setProperty("--y", random(-160, 160) + "px");
-    elem.style.setProperty("--r", random(0, 360) + "deg");
-    elem.style.setProperty("--s", random(0.6, 1));
-    elem.style.setProperty("--b", confettiColors[random(0, 5)]);
-    to.appendChild(elem);
-  };
+// let confettiAmount = 60,
+//   confettiColors = [
+//     "#7d32f5",
+//     "#f6e434",
+//     "#63fdf1",
+//     "#e672da",
+//     "#295dfe",
+//     "#6e57ff",
+//   ],
+//   random = (min, max) => {
+//     return Math.floor(Math.random() * (max - min + 1) + min);
+//   },
+//   createConfetti = (to) => {
+//     let elem = document.createElement("i"),
+//       set = Math.random() < 0.5 ? -1 : 1;
+//     elem.style.setProperty("--x", random(-260, 260) + "px");
+//     elem.style.setProperty("--y", random(-160, 160) + "px");
+//     elem.style.setProperty("--r", random(0, 360) + "deg");
+//     elem.style.setProperty("--s", random(0.6, 1));
+//     elem.style.setProperty("--b", confettiColors[random(0, 5)]);
+//     to.appendChild(elem);
+//   };
 
-// Function to increment likes count
-function incrementLikes() {
-  // Get the current likes count
-  let likesCountElem = document.getElementById("likes-count");
-  let currentLikes = parseInt(likesCountElem.innerText);
+// // Function to increment likes count
+// function incrementLikes() {
+//   // Get the current likes count
+//   let likesCountElem = document.getElementById("likes-count");
+//   let currentLikes = parseInt(likesCountElem.innerText);
 
-  // Trigger confetti animation
-  let pawButton = document.querySelector(".paw-button");
-  if (!pawButton.classList.contains("animation")) {
-    pawButton.classList.add("animation");
-    for (let i = 0; i < confettiAmount; i++) {
-      createConfetti(pawButton);
-    }
-    setTimeout(() => {
-      pawButton.classList.add("confetti");
-      setTimeout(() => {
-        pawButton.classList.add("liked");
-        likesCountElem.textContent = currentLikes + 1; // Increment likes count
-      }, 400);
-      setTimeout(() => {
-        pawButton.querySelectorAll("i").forEach((i) => i.remove());
-      }, 600);
-    }, 260);
-  }
+//   // Trigger confetti animation
+//   let pawButton = document.querySelector(".paw-button");
+//   if (!pawButton.classList.contains("animation")) {
+//     pawButton.classList.add("animation");
+//     for (let i = 0; i < confettiAmount; i++) {
+//       createConfetti(pawButton);
+//     }
+//     setTimeout(() => {
+//       pawButton.classList.add("confetti");
+//       setTimeout(() => {
+//         pawButton.classList.add("liked");
+//         likesCountElem.textContent = currentLikes + 1; // Increment likes count
+//       }, 400);
+//       setTimeout(() => {
+//         pawButton.querySelectorAll("i").forEach((i) => i.remove());
+//       }, 600);
+//     }, 260);
+//   }
 
-  // Update the likes count in the server (you'll need server-side logic for this)
-  // Here, you can send an AJAX request to update the likes count in your database
-}
+//   // Update the likes count in the server (you'll need server-side logic for this)
+//   // Here, you can send an AJAX request to update the likes count in your database
+// }
 
-// Attach click event listener to the paw button
-document.querySelectorAll(".paw-button").forEach((elem) => {
-  elem.addEventListener("click", (e) => {
-    incrementLikes();
-    e.preventDefault();
-  });
-});
+// // Attach click event listener to the paw button
+// document.querySelectorAll(".paw-button").forEach((elem) => {
+//   elem.addEventListener("click", (e) => {
+//     incrementLikes();
+//     e.preventDefault();
+//   });
+// });
