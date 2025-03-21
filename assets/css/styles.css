@@ -1740,3 +1740,16 @@ body.dark-theme {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.home__social-gif {
+  width: 24px; /* Adjust size as needed */
+  height: 24px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the GIF circular */
+  object-fit: cover;
+}
+
+/* Optional: Add hover effect */
+.home__social-gif:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
