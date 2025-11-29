@@ -1379,7 +1379,7 @@ body.dark-theme {
 @media screen and (max-width: 469px) {
   .alert {
     min-height: 0;
-    max-height: 55px;
+    max-height: 79px;
   }
 }
 
@@ -1387,7 +1387,7 @@ body.dark-theme {
 @media screen and (min-width: 576px) {
   .alert {
     min-height: 0;
-    max-height: 45px;
+    max-height: 60px;
   }
 
   .nav,
@@ -1422,7 +1422,7 @@ body.dark-theme {
 @media screen and (min-width: 767px) {
   .alert {
     min-height: 0;
-    max-height: 45px;
+    max-height: 80px;
   }
 
   .home__container {
@@ -1469,11 +1469,18 @@ body.dark-theme {
     column-gap: 8rem;
   }
 }
+
+@media screen and (min-width: 916px) {
+  .alert {
+    min-height: 0;
+    max-height: 60px;
+  }
+}
 /* For large devices */
 @media screen and (min-width: 1023px) {
   .alert {
     min-height: 0;
-    max-height: 45px;
+    max-height: 58px;
   }
 
   .header {
@@ -1562,7 +1569,7 @@ body.dark-theme {
 @media screen and (min-width: 1200px) {
   .alert {
     min-height: 0;
-    max-height: 45px;
+    max-height: 60px;
   }
   .section__border {
     padding-bottom: 6rem;
